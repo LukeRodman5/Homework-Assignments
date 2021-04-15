@@ -1,0 +1,12 @@
+/* Comment starts with a slash-asterisk & ends with an asterisk-slash
+like group/block comments in Java
+*/
+body { /* Style the body element in the html */
+    font-family: Arial, Helvetica, sans-serif; /* Give the browser our font preferences in order of preference */
+}
+img{ /* Style all of the img tags to be smaller */
+    height:200px; /* Set the height to 200px */
+}
+h1 { /* Style all of the h1 tags to be a specific size & color */
+    font-size: 32px;
+    color:cornflowerblue;}

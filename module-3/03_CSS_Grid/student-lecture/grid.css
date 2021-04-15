@@ -1,0 +1,39 @@
+/* this style sheet contains styling for grid components on the page */
+
+/* Set the column widths for the grid for the div with the class container, which is the entire body of the page */
+
+.container {                              /* style all elements with the class="container"          */
+    display:grid;                         /* use the grid layout to display the elements            */
+    /* Using fractional units, the browser will determine the width of each column based on the view screen (browser window) */
+                                          /*       So YOU don't have to calculate actual size       */
+    /* Define 3-columns in the grid where the first & last are the same size & the middle is 3x the size of the 1st & last */
+    grid-template-columns: 1fr 3fr 1fr;  /* define the number & width of the columns in the grid   */
+    grid-template-areas:                  /* define the rows & the content of the cells in the grid */ 
+"header header header"                    /* first all columns will be combined & called header     */
+"menu-nav main upcoming-events"           /* second row will name each column something different   */
+"footer footer footer" ;                  /* third row a; ; columns are combined & called footer    */
+    grid-gap: 10px;}
+header {                                  /* assign html components to the grid                     */
+    grid-area: header;}   /* assigning the header element to the column(s) named header in the grid */
+nav#menu-nav {
+    grid-area: menu-nav;}
+main {
+    grid-area: main;}
+aside {
+    grid-area: upcoming-events;}
+footer {
+    grid-area: footer;}
+
+                                          /* Add responsive design to the page                      */
+@media screen and (max-width: 768px) {    /* Apply this styling to screens with a maximum width of 768px    */
+.container {                              /* restyle any elements with class="container"            */
+    grid-template-areas:                  /* redefine the grid areas on the screen to display horizontally  */
+    "header"
+    "menu-nav"
+    "main"
+    "upcoming-events"
+    "footer"
+    ;
+    grid-template-columns: 1fr;            /* Define a one column grid                              */
+}    
+}

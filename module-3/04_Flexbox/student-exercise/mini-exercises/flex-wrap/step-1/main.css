@@ -1,0 +1,23 @@
+body {
+  margin: 20px;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5em;
+}
+
+.container {
+  background-color: #F0F0F0;
+  width: 290px;
+  padding: 20px;
+  display: flex;
+  flex-wrap:wrap;   /* step-1 The flex-items must wrap to the next line if their total width is greater than the container */
+}
+
+.box {
+  padding: 40px 55px;
+  width: 30px;
+  background-color: #00AFEF;
+  color: #fff;
+  text-align: center;
+  border: solid 1px #777;
+}

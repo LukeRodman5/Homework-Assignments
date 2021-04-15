@@ -1,0 +1,36 @@
+ <!--anything in html that starts with less-than-sign exclamation-point is a directive to a browser-->
+                <!--html is the information/data you want displayed -directives are no displayed-->
+<!DOCTYPE html> <!--DOCTYPE tells the browser what type of tags are in the file - optional-->
+<html lang="en"><!-- The container for all of the html in this file-->
+<head>          <!-- Contains information the browser needs to know about the html -not displayed-->
+    <meta charset="UTF-8"><!--meta tag identifies the information for the browser-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-1 Lecture</title><!-- The words placed in the tab of the browser for the page-->
+    <link rel="stylesheet" href="style.css"/> <!-- Tell the browser the style sheet we want applied to this html-->
+<!-- The link tag connects the html to external files you want the browser to use-->
+<!-- The rel="" attribute indicates the type of file & the href="" attribute is the path to the file-->
+<!-- The path to the stylesheet file is relative to the project folder (as it is always)-->
+</head>
+<body>        <!-- Container for the primary content of the web page that is displayed by the browser-->
+    <header>
+        <h1> Bits & Bytes</h1>  <!-- h1 tag gives us the largest heading style-->
+        <p>Welcome to the internet's best (non-Italian) restaurant</p>
+</header>
+<nav>   <!-- optional - put ways to get (navigate) to other parts of the web application -->
+    <a href="My-Inspiration.html">Make a Reservation</a>
+</nav>
+<main>
+        <section>      
+           <img src="student-exercise/images/MORPHEUS.png"/> 
+        </section>
+        <section>     <!-- optional -used to group logical units of content for styling -->
+            <h3>Dinner</h3>
+            <p>Rack of RAM</p>
+            <img src="images/menu/dinner/rack-of-ram.png"/>
+            <p>Vegetable Array</p>
+            <img src="images/menu/dinner/array-of-vegetables.png"/>
+        </section>
+</main>        
+</body>
+</html>       <!-- every html tag has an end-tag with start with a /-->

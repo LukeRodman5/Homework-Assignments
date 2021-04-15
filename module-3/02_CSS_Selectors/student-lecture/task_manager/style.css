@@ -1,0 +1,62 @@
+/* Style for the overall page */
+html {                                /* styling rules for the entire html document           */
+    height: 100%;                     /* html doc to fill the full height of what it's in     */
+    font-size: 16px;                  /* se the default font-size on the page                 */
+}
+    *{                                    /* Specify styling for any element in the html document */
+    box-sizing: border-box;           /* include margins & border in box size easy  placement */
+                                      /* Specify styling rules for the body (which contains all of the displayed content) of the html document */
+}
+body{
+        font-family: "Raleway", sans-serif; /* tell the browser to use the Raleway font if available, otherwise any sans-serif font */
+        background-image: linear-gradient(to bottom, gray, lightgray); /* make background a color that gets lighter as we go down the page */
+        background-repeat: no-repeat; /* do not repeat the background - stretch to fill  page */
+        background-attachment: fixed; /* do not scroll the background                         */
+}    
+    div.trello-list {                 /* Style the div with the class="trello-list" (.trello-list indicates a class called "trello-list" */
+        display: inline-block;        /* create a multi-column display                        */
+        width: 300px;                 /* make the columns fixed size                          */
+        background: #ddd;           /* set background color                                 */
+        border-radius: 2px 3px;       /* slightly rounded corners                             */
+    }
+    div.trello-list h2 {              /* style the class trello-list h2 elements              */
+        margin: 8px;                  /* move it over from the edge                           */
+        font-size: 1rem;              /* keep the font size consistent with the document font */            
+        font-weight: bold;            /* bold the text                                        */
+}
+    div.trello-list ol {              /* style ordered list in div with the class trello-list */
+        margin: 0px;                  /* remove spacing of the items                          */
+        padding: 0px;                 /* remove space with the element box                    */
+}
+    div.trello-list li {              /* style the list items in the trello list box          */
+        list-style: none;             /* remove the numbering of items in the list            */
+        background-color: rgb(255, 255, 255); /* set background color to rgb        (white) */
+        font-size: .9rem;             /* set font to slightly smaller than the heading        */
+        border-radius: 1px;           /* very slightly round the edges                        */
+        margin-bottom:10px;           /* set a margin at the bottom to space items            */
+        padding: 8px;                 /* put some space around the content                    */
+}
+    div.trello-list li:hover {        /* Style list items for when the cursor slides over the item (:hover) */
+        background-color: #f5f6f7;  /* set the background to a slightly grayer white        */
+        color: #092d42;             /* change the color of the list item                    */
+}
+    body {                             /* style all elements in the body -since we styled the body earlier this will override... */
+        white-space: nowrap;           /* don't wrap the element onto a new line if they don't all fit -add sc... */
+}
+    div.trello-list {                  /* style all the element for the class trello-list - since we have this... */
+        vertical-align: top;
+}
+    header > h1,                       /* style all the h1 child elements in the header       */
+    header >p {                        /*     & the p children of header                      */
+        display: inline-block;         /* place the element side by side                      */
+        height: 20 px;                 /* limit the height if the items in the header         */
+        padding-right: 20px;           /* pad each item's content on the right a little       */
+        vertical-align: middle;        /* align each item's content to middle of their space  */
+        color: white;                /* make the content white                              */
+        border-right: 1px solid white; /* place single vertical bat border after each item  */
+    }
+    header > h1 {
+        text-transform: uppercase;     /* convert content to upper case                       */  
+        font-size: 1.1rem;;            /* set font size to slightly bigger than the...        */  
+    }
+

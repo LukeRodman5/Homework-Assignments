@@ -1,0 +1,22 @@
+@media screen and (max-width: 1024px) {
+    #main-grid {
+      column-gap: 35px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "mainHeadline mainHeadline"
+        "mainQuote mainPicture"
+        "mainQuote mainContact"
+        "mainProfile mainProfile"
+        "expGrid expGrid";}
+  
+    #experience-grid {
+      row-gap: 20px;
+      column-gap: 20px
+      grid-template-columns: 1fr; 1fr;
+      align-items: baseline;
+      grid-template-areas:
+        "expCode expWeb"
+        "expDB expDesign";
+    }
+}
+  

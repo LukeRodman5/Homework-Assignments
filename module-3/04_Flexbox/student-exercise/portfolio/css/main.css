@@ -1,0 +1,179 @@
+/* The layout for this page consists of two panels: a left panel & a right panel.                         */
+/* The left panel contains a bio, navigation, & social media links.                                       */
+/* The right panel displays an image & a welcome banner.                                                  */
+/* The body style pushes the layout to full screen using `min-height: 100vh`, but it's missing something. */ 
+/* You need to add one property to lay out the items in a row:                                            */
+
+body{
+  flex-direction:row;
+  background-color:transparent;
+  min-height: 100vh;
+  background: url(../img/andre-furtado-JtV6zyOZSrA-unsplash.jpg) left / cover no-repeat;
+}
+header{
+  display:flex;
+}
+nav{
+  flex-grow:1;
+}
+  /* <><><><><> Add one property to lay out the items in a row <><><><><><><> */
+  /* <><><><><><><><><><><><><> add style here <><><><><><><><><><><><><><><> */
+
+
+  /* <><><><><> Add a flex layout to the left panel so the items stack <><><> */
+  /* <><>Step2<> on top of each other & take up a width (basis) of 35% <><><> */
+  /* <><><><><><><><><><><><><> add style here <><><><><><><><><><><><><><><> */
+#left-panel{
+  table-layout:fixed;
+  flex-basis:35%;
+}
+
+ul { {
+    display:flex;
+    flex:grow;
+    margin:0;
+    padding:o;
+  }
+  
+  .item {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+}
+  /* <><><> Add styles to the following class so that the social icons <><><> */
+  /* <><><> are in a row that stretch across the width of the left-panel <><> */
+  /* <><><> & have the same amount of space between each of them <><><><><><> */
+  /* <><><><><><><><><><><> add style here <><><><><><><><><><><><><><><><><> */
+
+
+  /* <><><> Add a style to the nav so that it ''grows'' to take up the <><><> */
+  /* <><><> rest of the available space.. This pushes the social media <><><> */
+  /* <><><> icons to the bottom of the left panel. <><><><><><><><><><><><><> */
+  /* <><><><><><><><><><><><> add style here <><><><><><><><><><><><><><><><> */
+
+  
+  /* <><><> Center the welcome banner in the middle of the right panel <><><> */
+  /* <><><> There are four styles needed to achieve the desired effect <><><> */
+  /* <><><><><><><><><><><><> add style here <><><><><><><><><><><><><><><><> */
+div{
+  justify-content:center;
+}
+.container{
+  background-color:ghostwhite;
+  display:flex;
+  justify-content:space-between;
+}
+
+
+    
+  
+  
+  /* <>-<>-<>-<>-<>-<>-< STOP HERE! >-<>-<>-<>-<>-<>-<>-<> */
+  /* <>-<>-< DO NOT CHANGE ANY STYLES BELOW THIS LINE >-<> */
+  /* <>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<> */
+  
+h1,
+h2 {
+  font-family: 'Kalam', cursive;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+header {
+  background-color: #F2CC65;
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 2.1rem;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 20px 0 20px;
+  padding: 0;
+}
+
+nav ul li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-bottom: 1px solid #707070;
+  padding-top: 30px
+}
+
+nav a,
+nav a:visited {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
+nav a:hover {
+  color: #F2CC65;
+  padding-left: 5px;
+}
+
+.fab {
+  color: #3A3B00
+}
+
+.social-icons li a:hover .fab {
+  color: #F2CC65
+}
+
+#welcome {
+  background-color: #F2CC65;
+  font-family: 'Kalam', cursive;
+  text-align: center;
+  font-size: 5rem;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media(max-width: 1024px) {
+
+  h1,
+  #welcome {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .fa-3x {
+    font-size: 1.5rem;
+  }
+}
+
+@media(max-width: 425px) {
+  #left-panel {
+    flex-basis: 100%;
+  }
+
+  nav ul li {
+    font-size: 1rem;
+  }
+
+  ul.social-icons {
+    margin-top: 40px;
+  }
+
+  #right-panel {
+    display: none;
+  }
+}

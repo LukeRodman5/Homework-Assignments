@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: rgba(192, 192, 192, 0.1);
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+aside {
+  position: fixed;
+  width: 200px;
+  border-right: 1px solid;
+  color: rgba(0, 173, 238, 0.4);
+  height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+body>aside>img {
+  display: block;
+  height: 120px;
+  margin: 0 auto;
+}
+main {
+  margin-left: 200px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+body>aside>nav>ul>li {
+  list-style: none;
+  text-align: center;
+  text-transform:  uppercase;
+  border-bottom: 1px solid rgba(0, 173, 238, 0.4);
+  margin:10px auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  width: 80%;
+  line-height: 2;
+}
+body>aside>nav>ul>li>a {
+  font-weight: bold;
+  color: #00ADEE;
+  text-decoration: none;
+}
+body>aside>nav>ul>li>a:hover {
+  text-decoration: underline;
+}
+header {
+height: 120px;
+}
+main>header>img {
+  height: 80%;
+}
+main>img.banner {
+  display: block;
+  width: 100%;
+}
+main>section>div{
+display: inline-block;
+width:  33%;
+padding-right: 20px;
+margin-top: 20px;
+}
+main>section>div>h2{
+color:#8CC36F;
+}
+main>section>div>h2>i{
+margin-right:  10px;
+}
+main>section>div:not(:last-child) {
+border-right: 1px solid  rgba(170, 239, 135, 0.8)
+}
+main>section>div:not(:last-child) {
+padding-left: 20px;
+}

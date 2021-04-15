@@ -1,0 +1,17 @@
+export default {
+
+      name: 'movies-list',
+
+      data() {
+
+        return {
+
+          movies: []
+
+        }
+
+      }
+
+      props: ['search']
+
+    }
